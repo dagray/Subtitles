@@ -89,6 +89,7 @@ Subtitles = new Meteor.Collection('subtitles');
   root.Router = new Router; 
 
   Meteor.startup(function () {
+    var require = __meteor_bootstrap__.require;  
     Backbone.history.start({ pushState : true });
   });
 
